@@ -41,7 +41,7 @@ export default class Sms extends service.Model {
   }
 }
 
-let locales = service.config('locales');
+let locales = alaska.main.config('locales');
 
 if (locales && locales.length > 1) {
   Sms.fields.content.help = 'Default';
