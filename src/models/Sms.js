@@ -7,7 +7,7 @@
 export default class Sms extends service.Model {
   static label = 'SMS';
   static title = 'title';
-  static defaultColumns = '_id title content';
+  static defaultColumns = '_id title content createdAt';
   static defaultSort = '_id';
 
   static fields = {
@@ -31,6 +31,10 @@ export default class Sms extends service.Model {
       type: String,
       require: true,
       multiLine: true
+    },
+    createdAt: {
+      label: 'Created At',
+      type: Date
     }
   };
 

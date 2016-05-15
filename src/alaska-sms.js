@@ -28,8 +28,8 @@ export default class SmsService extends alaska.Service {
       driversOptions.push({ label, value: key });
       if (driver.send) {
         //已经实例化的driver
-      } else if (driver.lib) {
-        let Driver = require(driver.lib).default;
+      } else if (driver.type) {
+        let Driver = require(driver.type).default;
         driver = new Driver(this);
       } else {
         throw new Error('invalid sms driver config ' + key);

@@ -12,7 +12,7 @@ export default {
   drivers: {
     test: {
       label: 'Test',
-      lib: 'alaska-sms-test'
+      type: 'alaska-sms-test'
     }
   },
   /**
