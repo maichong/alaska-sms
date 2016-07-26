@@ -4,8 +4,12 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Sms extends service.Model {
+import alaska from 'alaska';
+import service from '../';
+
+export default class Sms extends alaska.Model {
   static label = 'SMS';
+  static icon = 'comment';
   static title = 'title';
   static defaultColumns = '_id title content createdAt';
   static defaultSort = '_id';

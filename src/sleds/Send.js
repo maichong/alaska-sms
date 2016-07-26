@@ -5,11 +5,13 @@
  */
 
 import IntlMessageFormat from 'intl-messageformat';
+import alaska from 'alaska';
+import service from '../';
 import Sms from '../models/Sms';
 
 const messageCache = {};
 
-export default class Send extends service.Sled {
+export default class Send extends alaska.Sled {
   /**
    * 发送短信
    * @param data

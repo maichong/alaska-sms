@@ -7,7 +7,7 @@
 import alaska from 'alaska';
 import _ from 'lodash';
 
-export default class SmsService extends alaska.Service {
+class SmsService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
     options.id = options.id || 'alaska-sms';
@@ -45,3 +45,5 @@ export default class SmsService extends alaska.Service {
     this.driversMap = driversMap;
   }
 }
+
+export default new SmsService();
